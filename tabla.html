@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLA</title>
+    <style>
+        #operaciones{
+            margin-left: 10%;
+            width: 80%;
+            /*border: solid;*/
+            height: 1000px;
+        }
+        .producto{
+            margin-left: 100px;
+            margin-top: 100px;
+           /* border: solid;*/
+            width: 150px;
+            height: 230px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            float: left;
+        }
+        .suma{
+            position: relative;
+            float: right;
+            margin-top: 100px;
+           /* border: solid;*/
+            width: 100px;
+            height: 250px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            left: -450px;
+        }
+        .cociente{
+            position: relative;
+            left: 0px;
+            float: right;
+            margin-top: 100px;
+           /* border: solid;*/
+            width: 100px;
+            height: 250px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .titulo1{
+            font-size: 18px;
+           /* border: solid;*/
+            width: 175%;
+            height: 30px;
+        }
+        .titulo2{
+            font-size: 18px;
+           /* border: solid;*/
+            width: 200%;
+            height: 30px;
+        }
+        .titulo3{
+            font-size: 18px;
+           /* border: solid;*/
+            width: 220%;
+            height: 30px;
+        }  
+        .arriba{
+            position: relative;
+            top: 450px;
+           /* border: solid;*/
+            width: 60%;
+            left: 70px;
+        }
+        .abajo{
+            width: 60%;
+            position: relative;
+            top: 90px;
+            /*border: solid;*/
+            float: right;
+            left: 620px;
+        }
+        .arriba p{
+            position: relative;
+            left: 130px;
+        }
+        .abajo p{
+            position: relative;
+            left: 130px; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Tarea 2-Desarrollo Web Entorno Cliente</h2>
+     <div id="operaciones">
+        <div class="producto">
+            <div class="titulo1">TABLA DE MULTIPLICAR DEL 7</div>
+            <script>
+                //tabla de multiplicacion de siete con la instruccion for
+                var numero=7;
+               var cantidad = 10;
+               for (i=1;i<=cantidad;i++){
+                   document.write(numero +"x"+ i + "="+numero*i+"<br>");
+               }
+           </script>
+        </div>
+           
+        <div class="suma">
+            <div class="titulo2">
+                TABLA DE SUMAR DE 8
+            </div>
+            <script>
+                 //tabla de suma de ocho utilizando la instruccion while
+            var sumando1=8;
+            var sumando2;
+            var i=0;
+            while(i<=10){
+                i++;
+                sumando2=sumando1+i;
+                document.write(sumando1+"+"+i+"="+(sumando1+i)+"<br>");
+            }
+            </script>
+        </div>
+        <div class="cociente">
+            <div class="titulo3">
+                TABLA DE DIVIDIR DEL 9
+            </div>
+            <script>
+                 //tabla de division de nueve utilizando el bucle do while
+            var divisor=9;
+            var dividendo=10;
+            var i=0;
+            do{
+                i++;
+                dividendo=divisor/i;
+                document.write(divisor+"/"+i+"="+(divisor/i)+"<br>"); 
+            }
+            while(i<=10){
+            }
+            </script>
+        </div>
+            <div class="arriba">
+                <div class="deplazamiento"><h3>125/8 con desplazamiento de bits</h3>
+                    <p>
+                        <script>
+                            var num1=125;
+                            var num2=8;
+                            document.write(num1/num2);
+                        </script>
+                    </p>
+                </div>
+                <div class="deplazamiento1"><h3>40x4 con desplazamiento de bits</h3>
+                    <p>
+                        <script>
+                            var num1=40;
+                            var num2=4;
+                            document.write(num1*num2);
+                        </script>
+                    </p>
+                </div>
+            </div>
+        <div class="abajo">
+            <div class="deplazamiento"><h3>25/2 con desplazamiento de bits</h3>
+                <p>
+                    <script>
+                        var num1=25;
+                        var num2=2;
+                        document.write(num1/num2);
+                    </script>
+                </p>
+            </div>
+            <div class="deplazamiento"><h3>10x16 con desplazamiento de bits</h3>
+                <p>
+                    <script>
+                        var num1=10;
+                        var num2=16;
+                        document.write(num1*num2);
+                    </script>
+                </p>
+            </div>
+        </div>
+</body>
+</html>
